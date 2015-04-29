@@ -138,6 +138,7 @@ $(document).ready(function() {
 
   // to stop the timer
   $('#stop').click(function() {
+    log('Get Back to Work!');
     timerPause();
   });
 
