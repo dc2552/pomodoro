@@ -18,7 +18,7 @@ body {
   margin: 60px auto;
   border-radius: 50%;
   background: #b25244;
-  background: linear-gradient(#b25244, #5e1912);
+  /*background: linear-gradient(#b25244, #5e1912);*/
   position: relative;
   cursor: pointer;
   padding: 20px;

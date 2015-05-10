@@ -3,7 +3,6 @@ var pomoTime,
     timer_id,
     pomoType;
 
-
 // Function to pause the timer
 function timerPause(){
   clearInterval(timer_id);
@@ -19,14 +18,6 @@ function timerStop (){
   playSound();
 }
 
-
-
-
-
-
-
-
-
 function log(str){
   var currentTime = new Date()
   var hours = currentTime.getHours()
@@ -38,7 +29,6 @@ function log(str){
   $('#log').slideDown();
   $('div#log ul').append('<li><b>' + hours + ':' + minutes +':</b> ' + str + '</li>');
 }
-
 
 // Play a sound
 function playSound() {
@@ -123,8 +113,14 @@ $(document).ready(function() {
   // 25 minutes timer  
   $('#pomodoro25').click(function() { 
     setPomodoro(25); 
+      var p =$('.wrapper').css("background", "#5e1912");
   });
-  
+  $('#pomodoro25').mouseleave(function() { 
+    timerStop();
+    var p =$('.wrapper').css("background", "#b25244
+      ");
+
+  });
   // 15 minutes timer
   $('#pomodoro15').click(function() { 
     setPomodoro(15); 
@@ -150,20 +146,12 @@ $(document).ready(function() {
   });
 
 
-
-  // o
-
-
   $('#text').on('click', function(){
     // $('#log').show();
     // log('on');
     // playSound();
     setPomodoro(0.02);  
   })
-
-
-
-
 
 
   $('#info').hide(); 
