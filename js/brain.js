@@ -114,17 +114,17 @@ $(document).ready(function() {
   $('#pomodoro25').click(function() { 
     setPomodoro(25); 
       var p =$('.wrapper').css("background", "#5e1912");
-  });
-  $('#pomodoro25').mouseleave(function() { 
-    timerStop();
-    var p =$('.wrapper').css("background", "#b25244
-      ");
     navigator.notification.alert(
             'Get back to work you loser',  // message
             alertDismissed,         // callback
             'Game Over',            // title
             'Done'                  // buttonName
         );
+  });
+  $('#pomodoro25').mouseleave(function() { 
+    timerStop();
+    var p =$('.wrapper').css("background", "#b25244
+      ");
 
   });
   // 15 minutes timer
