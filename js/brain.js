@@ -119,6 +119,12 @@ $(document).ready(function() {
     timerStop();
     var p =$('.wrapper').css("background", "#b25244
       ");
+    navigator.notification.alert(
+            'Get back to work you loser',  // message
+            alertDismissed,         // callback
+            'Game Over',            // title
+            'Done'                  // buttonName
+        );
 
   });
   // 15 minutes timer
