@@ -1,3 +1,21 @@
+function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, true);
+    }
+
+    // device APIs are available
+    //
+    function onDeviceReady() {
+        // Register the event listener
+        document.addEventListener("backbutton", onBackKeyDown, true);
+    }
+
+    // Handle the back button
+    //
+function onBackKeyDown() {
+  alert("GO BACK!");
+  timerStop();
+  navigator.app.exitApp();
+    }
 
 var pomoTime,
     timer_id,
